@@ -22,33 +22,34 @@ Nous nous sommes basés sur les formules de [The power rank](https://thepowerran
 - **Playwright**: Framework pour faire du scrapping
 
 # Contributions
-Vous souhaitez contribuer au projet ? Super ! Consultez notre dépôt [GitHub]() pour les problèmes qui ont besoin d'aide.
+Vous souhaitez contribuer au projet ? Super ! Consultez notre dépôt [GitHub](https://github.com/JrDKHub/pysket) pour les problèmes qui ont besoin d'aide.
 Les contributions à ce projet sont les bienvenues ! Merci de cloner le référentiel et de soumettre une demande d'extraction avec vos fonctionnalités ou corrections.
 
+# Installation
 
-1. **Install Python**: Ensure that Python is installed on your system. You can download it from [python.org](https://www.python.org/downloads/).
+1. **Installer Python** : Assurez-vous que Python est installé sur votre système. Vous pouvez le télécharger à partir depuis [python.org](https://www.python.org/downloads/).
 
-2. **Create a Virtual Environment** (recommended):
+2. **Créer un environnement virtuel** (recommandé):
    ```bash
    python -m venv streamlit_env
-   source streamlit_env/bin/activate  # On Windows use `streamlit_env\\Scripts\\activate`
+   source streamlit_env/bin/activate  
 
-3. **Install Streamlit**:
+3. **Installer Streamlit**:
     ```bash
     pip install streamlit
     
-Running the Application
+4. Exécution de l'application
 
 
-To run your Streamlit application, navigate to your project directory in the terminal and type:
-    ```bash
-        streamlit run your_script.py
+Pour exécuter votre application Streamlit, accédez au répertoire de votre projet dans le terminal et tapez:
+
+    streamlit run your_script.py
 
 
-Replace your_script.py with the path to your Streamlit script.
+Remplacez votre_script.py par le chemin d'accès à votre script Streamlit.
 
 
-Here’s a basic project structure recommended of our Streamlit applications:
+Voici une structure de projet de base recommandée pour nos applications Streamlit:
 
     /pysket
         /venv                   # Virtual environment
@@ -64,10 +65,9 @@ Here’s a basic project structure recommended of our Streamlit applications:
 
 # Resources Additionnelles
 
-Streamlit Documentation
-Streamlit Forum
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+- [Streamlit Documentation](https://docs.streamlit.io/get-started)
+- [Streamlit Forum](https://discuss.streamlit.io/)
+
 
 ## Bon Stream !!!
 """
