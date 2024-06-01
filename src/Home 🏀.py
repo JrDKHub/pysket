@@ -1,4 +1,5 @@
 import streamlit as st
+import functions as fn
 
 
 all_teams_names = [
@@ -88,7 +89,6 @@ selected_team_logo = all_teams_logos[team_index1]
 
 if home:
     logo1 = selected_team_logo
-
 team1.image(logo1,width=200)
 
 
@@ -110,9 +110,19 @@ team2.image(logo2,width=200)
 
 versus.image("https://static.vecteezy.com/ti/vecteur-libre/p3/13212902-signe-vs-ou-versus-symbole-de-competition-vectoriel.jpg")
 if versus.button("Simuler la rencontre",type="primary"):
-    papa = "to"
-    team1.markdown(f"<h1 style='text-align: center;'>{papa}</h1>", unsafe_allow_html=True)   
-    team2.markdown(f"<h1 style='text-align: center;'>{papa}</h1>", unsafe_allow_html=True)
+    score_home, score_away = fn.score(home, away)
+    if score_home > score_away:
+        code1 = "green"
+        code2 = "red"
+    elif score_away > score_home:
+        code2 = "green"
+        code1 = "red"
+    else :
+        code1 = "gray"
+        code2 = "gray"
+        
+    team1.markdown(f"<h1 style='text-align: center; color:{code1};'>{round(score_home)}</h1>", unsafe_allow_html=True)   
+    team2.markdown(f"<h1 style='text-align: center;color:{code2};'>{round(score_away)}</h1>", unsafe_allow_html=True)
 
         
     
