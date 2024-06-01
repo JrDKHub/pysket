@@ -4,7 +4,7 @@ import streamlit as st
 readme_content = """
 # Bienvenue sur PYSKET
 
-![Logo]("assets/img/pysket.png")
+![Logo](src/assets/img/pysket.png)
 
 Notre application nous permet de prédire les résultats de matchs de basket (le score des équipes de la franchise NBA si celles ci s'affrontaient).
 
@@ -55,6 +55,7 @@ Here’s a basic project structure recommended of our Streamlit applications:
         /src                    # Source folder
             home.py             # Main Streamlit application script
         /assets                 # Files
+            /img                # Images folder
         /pages                  # Differents pages of the application
             README.md
 
