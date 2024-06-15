@@ -2,7 +2,7 @@ import pandas as pd
 
 
 def score(home: str, away: str):
-    data = pd.read_csv("assets/data.csv")
+    data = pd.read_csv("src/assets/data.csv")
     data = data.drop(["Age", "W", "L", "PW", "PL", "MOV", "SOS", "SRS"], axis=1)
 
     home_line = data[data["Team"] == home]

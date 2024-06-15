@@ -1,11 +1,11 @@
 from playwright.sync_api import Playwright, sync_playwright
 
 with sync_playwright() as p:
-    # browser = p.chromium.launch(headless=False, slow_mo=500)
+    # browser = p.chromium.launch(headless=False, slow_mo=2000)
     browser = p.chromium.launch()
     context = browser.new_context()
     page = context.new_page()
-    page.goto("https://www.basketball-reference.com/leagues/NBA_2023.html")
+    page.goto("https://www.basketball-reference.com/leagues/NBA_2024.html")
 
     cookie_button = page.get_by_text("AGREE", exact=True)
     cookie_button.click()
