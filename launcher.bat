@@ -1,17 +1,17 @@
 @echo off
-REM Activation de l'environnement Conda
-CALL C:\Users\jrdak\anaconda3\Scripts\activate.bat digi 
+REM activating conda
+CALL C:\Users\your-username\anaconda3\Scripts\activate.bat conda_env_name 
 
-REM Vérifier si l'activation a réussi
+REM checking activation
 IF ERRORLEVEL 1 (
-    echo Échec de l'activation de l'environnement 'digi'.
+    echo custom error message
     exit /b 1
 ) ELSE (
-    echo Environnement 'digi' activé avec succès.
+    echo custom success message.
 )
 
-REM Lancer Streamlit
-streamlit run "C:\Users\jrdak\Desktop\Digi\Python\2023\ch23-24\pysket\src\Home 🏀.py"
+REM launch streamlit
+streamlit run path-to-streamlit-main-py-file
 
-REM Empêcher la fermeture de la fenêtre
+REM stop it from closing
 pause
