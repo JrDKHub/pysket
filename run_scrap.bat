@@ -1,18 +1,18 @@
 @echo off
-REM Activer l'environnement Conda
-CALL C:\Users\jrdak\anaconda3\Scripts\activate.bat digi
+REM activate conda env
+CALL C:\Users\your-username\anaconda3\Scripts\activate.bat conda_env_name
 
-REM Vérifier si l'activation a réussi
+REM check activation
 IF ERRORLEVEL 1 (
-    echo Échec de l'activation de l'environnement 'digi'.
+    echo custom error message.
     pause
     exit /b 1
 ) ELSE (
-    echo Environnement 'digi' activé avec succès.
+    echo custom success message.
 )
 
-REM Exécuter le script Python
-python C:\Users\jrdak\Desktop\Digi\Python\2023\ch23-24\pysket\src\scrap.py
+REM python script
+python path-to-your-script
 
-REM Empêcher la fermeture de la fenêtre
+REM stop closing
 pause
